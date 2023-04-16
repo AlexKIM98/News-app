@@ -1,0 +1,117 @@
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 0;
+    background: rgba(0,0,0,.8);
+    margin-top: 5rem;
+}
+
+.img__container {
+    position: relative;
+  }
+
+.image{
+    max-width: 80%;
+    height: auto;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+    
+}
+
+.image:hover {
+    transform: scale(1.1);
+  }
+  .name {
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+  
+  .img__container:hover .name {
+    opacity: 1;
+    transform: translate(-90%, -40%);
+    background-color: #333;
+  }
+
+.footer-container{
+    max-width: 1140px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:40px;
+}
+
+
+.footer .left{
+    height: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.footer .right{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 20%;
+}
+
+.footer .right h2 {
+    font-size: 2.1rem;
+    line-height: 1.5;
+    color: rgb(194, 232, 189);
+    font-family:serif;
+    font-weight: 1000;
+    font-style: oblique;
+  }
+
+
+@media screen and (max-width: 1240px) {
+    .name {
+      font-size: 1rem;
+      padding: 0.4rem;
+      border-radius: 0.4rem;
+      left: 10%;
+    }
+    .image {
+        max-width: 100%;
+        height: auto;
+      }
+      .footer .right h2 {
+        font-size: 1.2rem;
+        line-height: 1.3;
+      }
+      
+  }
+  
+  @media screen and (max-width: 680px) {
+    .name {
+      font-size: 0.8rem;
+      padding: 0.3rem;
+      border-radius: 0.3rem;
+      left: 120%;
+    }
+    .image {
+        max-width: 100%;
+        height: auto;
+      }
+      .footer .right h2 {
+        font-size: 1rem;
+        line-height: 1.2;
+      }
+  }

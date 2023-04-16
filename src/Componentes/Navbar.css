@@ -1,0 +1,100 @@
+.nav-header{
+    position: absolute;
+    width: 100%;
+     height: 14vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    transition: 0.3s;
+    z-index: 1000;
+    top: 0;
+    
+    background-color: black;
+    
+    
+}
+
+.nav-menu{
+    display: flex;
+    padding: 0;
+   background: transparent;
+
+}
+
+.nav-menu li {
+    padding: 0 1rem;
+    list-style: none;
+}
+
+#principal:hover{
+    color: aqua;
+}
+
+#musica:hover{
+    color:yellow;
+}
+
+#cine:hover{
+    color: yellow;
+}
+
+#clima:hover{
+    color: aqua;
+}
+
+
+.nav-link{
+    font-size: 1.4rem;
+    font-weight: 900;
+    text-decoration: none;
+    color: white;
+    
+}
+
+span{
+    color: white;
+}
+
+.hamburguer{
+    display: none;
+
+}
+
+@media screen and (max-width:1240px){
+    .hamburguer{
+        display: block;
+    }
+    .nav-header{
+        
+        background-color: rgba(0, 0, 0, 0);
+        
+        
+    }
+
+    .nav-menu{
+        position: absolute;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        left:-100%;
+        text-align: center;
+        width: 100%;
+        height: 100vh;
+        transition: 0.3s;
+        z-index: -1;
+        background:rgba(0,0,0, .9) ;
+    }
+
+    .nav-menu.active{
+        left: 0;
+    }
+
+    .nav-menu li{
+        padding: 1rem 0;
+    }
+
+    .nav-link{
+        font-size: 1rem;
+    }
+}
