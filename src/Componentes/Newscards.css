@@ -1,6 +1,6 @@
 
 .title h1{
-    font-size: 5rem;
+    font-size: 6rem;
     color:rgb(244, 236, 236);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin: 0;
@@ -61,6 +61,22 @@
     border-bottom-right-radius: 5%;
 }
 
+
+@media (max-width: 1900px) {
+
+  .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .title h1{
+    font-size: 4rem;
+  }
+}
+
+
 @media (max-width: 1300px) {
     .news__container {
       width: 80vw;
@@ -75,7 +91,7 @@
     }
 
     .title h1{
-      font-size: 4rem;
+      font-size: 3rem;
     }
   }
   

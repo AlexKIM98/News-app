@@ -1,5 +1,5 @@
 import React from 'react'
-import NavbarComp from '../Componentes/Navbar'
+import NavbarComp from '../Componentes/NavbarComp'
 import News from '../Componentes/News'
 import Cards from '../Componentes/Cards'
 import Footer from '../Componentes/Footer'

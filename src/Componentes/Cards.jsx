@@ -75,7 +75,7 @@ const Cards = () => {
                     </CardContent>
                 </CardActionArea>
                     <CardActions className='card-btn'>
-                    <Button className='btn'>
+                    <Button className='btn1'>
                         <Link className='btn-link' target='_blank' to={article.url} >Seguir leyendo</Link>
                     </Button>
                     </CardActions>

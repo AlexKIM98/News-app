@@ -37,21 +37,17 @@ const NavbarComp = () => {
                 <span> |</span>
             </li>
             <li>
-                <Link to='/musica' className='nav-link' id='musica'>Música</Link>
+                <Link to='/deporte' className='nav-link' id='deporte'>Deporte</Link>
                 <span> |</span>
             </li>
             <li>
-                <Link to='cine' className='nav-link' id='cine'>Cine</Link>
-                <span> |</span>
-            </li>
-            <li>
-                <Link to='clima' className='nav-link' id='clima' >Clima</Link>
+                <Link to='/clima' className='nav-link' id='clima' >Clima</Link>
             </li>
            
         </ul>
 
         <div className='hamburguer' onClick={handleClick}>
-        {click ? (<FaTimes size={20}  style={{color:'#f50057'}}/>) : (<FaBars size={20}  style={{color:'#64ffda'}}/>)}
+        {click ? (<FaTimes size={20}  style={{color:'#f50057'}}/>) : (<FaBars size={20}  style={{color:'#ef6c00'}}/>)}
         </div>
         
       </Stack>  

@@ -6,8 +6,13 @@
   }
 
   .card{
-    border-radius: 30px;
-    background-color: rgb(252, 244, 235);
+    border-radius: 50px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    
   }
 
 
@@ -16,37 +21,66 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin-bottom: auto;
+    flex-grow: 1;
   }
+
 
   .card-btn{
     display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+    justify-content: flex-end;
+  }
+
+
+  .btn1 {
     align-items: center;
-    justify-content: center;
-    margin-top: auto;
-  }
-
-  .btn{
-    margin: 0 auto;
-    border-color: #ffffff;
-    padding: 0.6em 2.3em;
+    appearance: none;
+    background-color: #FCFCFD;
+    border-radius: 4px;
+    border-width: 0;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #36395A;
     cursor: pointer;
-    font-size: 1em;
-    color: #ffffff;
-    background-image: linear-gradient(45deg, transparent 50%, #000000 50%);
-    background-position: 25%;
-    background-size: 400%;
-    -webkit-transition: background 500ms ease-in-out, color 500ms ease-in-out;
-    transition: background 500ms ease-in-out, color 500ms ease-in-out;
-    
-  }
-
-  .btn:hover{
-    color: #ffffff;
-    background-position: 100%;
+    display: inline-flex;
+    font-family: "JetBrains Mono",monospace;
+    height: 48px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s,transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow,transform;
+    font-size: 18px;
   }
   
-  .btn-link{
+  .btn1:focus {
+    box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  }
+  
+  .btn1:hover {
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    transform: translateY(-2px);
+  }
+  
+  .btn1:active {
+    box-shadow: #D6D6E7 0 3px 7px inset;
+    transform: translateY(2px);
+  }
+  
+
+
+ .btn-link{
     text-decoration: none;
     font-size: 1em;
     color: #0d0d0d;
@@ -57,10 +91,13 @@
     
   }
 
-  .btn-link:hover {
-    text-decoration: none;
-    color: #ffffff;
+@media (min-width: 768px) {
+  .btn1{
+    padding: 0.25em 0.75em;
   }
+}
+
+
 
   @media (max-width: 600px) {
     .card__container {

@@ -3,9 +3,8 @@ import { Routes, Route} from "react-router-dom";
 import './App.css';
 
 import Home from "./routes/Home";
-import Musica from "./routes/Musica";
-import Cine from "./routes/Cine";
 import Clima from "./routes/Clima";
+import Deporte from "./routes/Deporte";
 
 
 function App() {
@@ -13,8 +12,7 @@ function App() {
     <React.Fragment>
      <Routes>
         <Route path='/' element={<Home/>}/>
-        <Route path='/musica' element={<Musica/>} />
-        <Route path='/cine' element={<Cine/>}/>
+        <Route path='/deporte' element={<Deporte/>}/>
         <Route path='/clima' element={<Clima/>}/>
      </Routes>
     </React.Fragment>
