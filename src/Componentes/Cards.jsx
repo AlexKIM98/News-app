@@ -53,12 +53,12 @@ const Cards = () => {
 
 
   return (
-    <div>
+    <div >
         <div className='card__container'>
             {articles.map(article => {
                 return (
             <Card key={article.publishedAt} className='card'>
-                <CardActionArea>
+                {/* <CardActionArea> */}
                     <CardMedia
                         component="img"
                         height="160"
@@ -73,7 +73,7 @@ const Cards = () => {
                             {article.title}
                         </Typography>
                     </CardContent>
-                </CardActionArea>
+                {/* </CardActionArea> */}
                     <CardActions className='card-btn'>
                     <Button className='btn1'>
                         <Link className='btn-link' target='_blank' to={article.url} >Seguir leyendo</Link>

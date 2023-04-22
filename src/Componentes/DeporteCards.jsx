@@ -74,7 +74,7 @@ useEffect(() => {
     {deporteArticles.map(deporteArticle => {
         return (
     <Card key={deporteArticle.publishedAt} className='card'>
-        <CardActionArea>
+        {/* <CardActionArea> */}
             <CardMedia
                 component="img"
                 height="160"
@@ -89,7 +89,7 @@ useEffect(() => {
                     {deporteArticle.title}
                 </Typography>
             </CardContent>
-        </CardActionArea>
+        {/* </CardActionArea> */}
             <CardActions className='card-btn'>
             <Button className='btn1'>
                 <Link className='btn-link' target='_blank' to={deporteArticle.url} >Seguir leyendo</Link>
